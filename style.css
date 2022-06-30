@@ -358,7 +358,7 @@ p {
 
 .about-img.house {
   background-color: #fae8e1;
-  background-image: url("img/svg/house.svg");
+  background-image: url("./img/svg/house.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
