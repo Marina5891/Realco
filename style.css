@@ -114,7 +114,7 @@ p {
 }
 
 .header-menu .header-properties::after {
-  content: url('/img/svg/expand_more.svg');
+  content: url('img/svg/expand_more.svg');
   position: relative;
   top: -1px;
 }
@@ -129,7 +129,7 @@ p {
 
 .header-menu .header-search {
   padding: 9px 16px 9px 40px;
-  background: url('/img/svg/search.svg') no-repeat 16px 50%;
+  background: url('img/svg/search.svg') no-repeat 16px 50%;
 }
 
 .header-menu .header-cart {
@@ -143,7 +143,7 @@ p {
 }
 
 .header-menu li.header-cart a::before {
-  content: url('/img/svg/shopping_bag.svg');
+  content: url('img/svg/shopping_bag.svg');
   margin-right: 6px;
   text-align: center;
   vertical-align: middle;
@@ -168,7 +168,7 @@ p {
 }
 
 .main-title::before {
-  content: url('/img/svg/Vector.svg');
+  content: url('img/svg/Vector.svg');
   position: absolute;
   width: 135px;
   height: 146px;
@@ -177,7 +177,7 @@ p {
 }
 
 .main-title::after {
-  content: url('/img/svg/Vector.svg');
+  content: url('img/svg/Vector.svg');
   transform: rotate(180deg);
   position: absolute;
   width: 135px;
@@ -210,7 +210,7 @@ p {
 }
 
 .main-search input {
-  background: #ffffff url('/img/svg/search.svg') no-repeat 16px 50%;
+  background: #ffffff url('img/svg/search.svg') no-repeat 16px 50%;
   background-size: 24px 24px;
   border: 1px solid #e7e8e3;
   box-shadow: 0 2px 4px 0 #e7e8e3;
@@ -357,15 +357,15 @@ p {
 }
 
 .about-img.house {
-  background: #fae8e1 url("/img/svg/house.svg") no-repeat center;
+  background: #fae8e1 url("img/svg/house.svg") no-repeat center;
 }
 
 .about-img.receipt {
-  background: #fae8e1 url("/img/svg/receipt.svg") no-repeat center;
+  background: #fae8e1 url("img/svg/receipt.svg") no-repeat center;
 }
 
 .about-img.key {
-  background: #fae8e1 url("/img/svg/key.svg") no-repeat center;
+  background: #fae8e1 url("img/svg/key.svg") no-repeat center;
 }
 
 .about-item h3 {
