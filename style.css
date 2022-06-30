@@ -357,7 +357,10 @@ p {
 }
 
 .about-img.house {
-  background: #fae8e1 url("img/svg/house.svg") no-repeat center;
+  background-color: #fae8e1;
+  background-image: url("img/svg/house.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .about-img.receipt {
