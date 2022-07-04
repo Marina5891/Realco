@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Realco</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="styleLess.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -18,9 +17,11 @@
   <div class="header-title">Get your dream house in a week</div>
   <header class="header">
     <div class="container">
+
       <div class="header-logo">
-        <img src="img/svg/Realco.svg" alt="Realco">
+        <img src="/img/svg/Realco.svg" alt="Realco">
       </div>
+
       <nav class="header-navigate">
         <ul class="header-menu">
           <li><a href="#">Home</a></li>
@@ -32,11 +33,12 @@
           <li class="header-button btn"><a href="#">Find a property</a></li>
         </ul>
       </nav>
+
     </div>
   </header>
 
   <main>
-    <section class="main">
+    <article class="main">
       <div class="main-title">
         <div class="main-promo">
           <div class="slogan">Find your dream place</div>
@@ -54,71 +56,229 @@
       </div>
 
       <div class="main-image">
-        <img src="img/png/home.png" alt="">
+        <img src="img/png/home.png">
       </div>
-    </section>
 
-    <section class="description container">
+    </article>
 
-      <article class="medias">
-        <div class="medias-desc">As seen on the world's best magazines and media
-        </div>
-        <ul class="medias-links">
-          <li><img src="img/svg/media-1.svg"></li>
-          <li><img src="img/svg/media-2.svg"></li>
-          <li><img src="img/svg/media-3.svg"></li>
-          <li><img src="img/svg/media-4.svg"></li>
-          <li><img src="img/svg/media-5.svg"></li>
-        </ul>
-      </article>
+    <article class="description">
+      <div class="container">
 
-      <article class="about">
-        <h2>How it works</h2>
-        <p class="about-works">Nunc laoreet consequat nunc at consequat. Praesent aliquam mi id efficitur
-          pellentesque.<br>
-          Maecenas varius felis
-          felis.</p>
-        <div class="about-items">
-          <div class="about-item">
-            <div class="about-img house"></div>
-            <h3>Find property</h3>
-            <p>Odales mauris quis tellus facilisis, vel mattis magna interdum. Curabitur eget aliquam elit. In mauris
-              purus, auctor a eleifend non.</p>
+        <section class="medias">
+          <div class="medias-desc">As seen on the world's best magazines and media
           </div>
-          <div class="about-item">
-            <div class="about-img receipt"></div>
-            <h3>Make a deal</h3>
-            <p>Pellentesque suscipit mauris. Nam dictum, erat a volutpat varius, urna nisi sollicitudin orci, sagittis
-              facilisis odio tortor ac mi.</p>
-          </div>
-          <div class="about-item">
-            <div class="about-img key"></div>
-            <h3>Get your keys</h3>
-            <p>Nulla vel bibendum purus. Etiam tempus quam vel pulvinar rutrum. Duis semper, metus vitae fermentum
-              consequat.</p>
-          </div>
-        </div>
-      </article>
+          <ul class="medias-links">
+            <li><img src="/img/svg/media-1.svg"></li>
+            <li><img src="/img/svg/media-2.svg"></li>
+            <li><img src="/img/svg/media-3.svg"></li>
+            <li><img src="/img/svg/media-4.svg"></li>
+            <li><img src="/img/svg/media-5.svg"></li>
+          </ul>
+        </section>
 
-      <article class="info">
-        <div class="info-description">
-          <div class="slogan">
-            Comfort first
+        <section class="about">
+          <h2>How it works</h2>
+          <p class="about-works">Nunc laoreet consequat nunc at consequat. Praesent aliquam mi id efficitur
+            pellentesque.<br>
+            Maecenas varius felis
+            felis.</p>
+          <div class="about-items">
+            <div class="about-item">
+              <div class="about-img house"></div>
+              <h3>Find property</h3>
+              <p>Odales mauris quis tellus facilisis, vel mattis magna interdum. Curabitur eget aliquam elit. In mauris
+                purus, auctor a eleifend non.</p>
+            </div>
+            <div class="about-item">
+              <div class="about-img receipt"></div>
+              <h3>Make a deal</h3>
+              <p>Pellentesque suscipit mauris. Nam dictum, erat a volutpat varius, urna nisi sollicitudin orci, sagittis
+                facilisis odio tortor ac mi.</p>
+            </div>
+            <div class="about-item">
+              <div class="about-img key"></div>
+              <h3>Get your keys</h3>
+              <p>Nulla vel bibendum purus. Etiam tempus quam vel pulvinar rutrum. Duis semper, metus vitae fermentum
+                consequat.</p>
+            </div>
           </div>
-          <h2>The best houses for family comfort</h2>
-          <p>Ectus ipsum faucibus justo, et semper quam nisl in nibh. Proin sollicitudin, lorem non posuere blandit.</p>
+        </section>
+
+        <section class="info">
+          <div class="info-description left">
+            <div class="slogan">
+              Comfort first
+            </div>
+            <h2>The best houses for family comfort</h2>
+            <p>Ectus ipsum faucibus justo, et semper quam nisl in nibh. Proin sollicitudin, lorem non posuere blandit.
+            </p>
+            <div class="explore-and-contact">
+              <a href="#" class="explore-link">Explore properties</a>
+              <a href="#" class="contact-link">Contact agent</a>
+            </div>
+          </div>
+
+          <div class="info-img">
+            <img src="img/png/comfort-first.png" alt="The best houses for family comfort">
+          </div>
+        </section>
+
+        <section class="info">
+          <div class="info-img">
+            <img src="img/png/quick-and-easy.png" alt="Fast forward process">
+          </div>
+
+          <div class="info-description right">
+            <div class="slogan">
+              Quick and easy
+            </div>
+            <h2>Fast forward process</h2>
+            <p>Ut vitae nisi eu nisi maximus condimentum ac id purus. Duis sit amet mi arcu praesent nec felis nisl.</p>
+            <div class="info-items">
+              <div class="info-item">
+                <div class="info-pic payments"></div>
+                <h3>Affordable prices</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              </div>
+              <div class="info-item">
+                <div class="info-pic desc-image"></div>
+                <h3>Less paper work</h3>
+                <p>Curabitur porta luctus semper donec eget lobortis leo ac finibus nisi.</p>
+              </div>
+            </div>
+            <div class="explore-and-contact">
+              <a href="#" class="explore-link">Explore properties</a>
+              <a href="#" class="contact-link">Contact agent</a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </article>
+
+    <article class="properties">
+      <div class="container">
+        <section class="property">
+
+          <div class="slogan">Properties</div>
+          <h2>Houses in your favorite area</h2>
+
+          <div class="property-items">
+
+            <div class="property-item">
+              <div class="property-img">
+                <img src="img/png/house-1.png" alt="Cozy studio in Los Angeles">
+              </div>
+              <div class="property-desc">
+                <h3>Cozy studio in Los Angeles</h3>
+                <p>$ 1,200.00 USD</p>
+                <div class="property-address">2263 Southlea, Los Angeles</div>
+                <ul class="property-features">
+                  <li>2</li>
+                  <li>2</li>
+                  <li>840 sqft</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="property-item">
+              <div class="property-img">
+                <img src="img/png/house-2.png" alt="Tiny home in San Diego">
+              </div>
+              <div class="property-desc">
+                <h3>Tiny home in San Diego</h3>
+                <p>$ 740,000.00 USD</p>
+                <div class="property-address">2569 El Segundo, San Diego</div>
+                <ul class="property-features">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>400 sqft</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="property-item">
+              <div class="property-img">
+                <img src="img/png/house-3.png" alt="Crown house in New York">
+              </div>
+              <div class="property-desc">
+                <h3>Crown house in New York</h3>
+                <p>$ 980,000.00 USD</p>
+                <div class="property-address">4489 Smity Fielda, New York</div>
+                <ul class="property-features">
+                  <li>2</li>
+                  <li>4</li>
+                  <li>3200 sqft</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="property-item">
+              <div class="property-img">
+                <img src="img/png/house-4.png" alt="Family house in Los Angeles">
+              </div>
+              <div class="property-desc">
+                <h3>Family house in Los Angeles</h3>
+                <p>$ 4,200.00 USD</p>
+                <div class="property-address">2263 Southlea, Los Angeles</div>
+                <ul class="property-features">
+                  <li>2</li>
+                  <li>3</li>
+                  <li>1400 sqft</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="property-item">
+              <div class="property-img">
+                <img src="img/png/house-5.png" alt="Studio in Las Vegas">
+              </div>
+              <div class="property-desc">
+                <h3>Studio in Las Vegas</h3>
+                <p>$ 820,000.00 USD</p>
+                <div class="property-address">2569 Halls Corner, Las Vegas</div>
+                <ul class="property-features">
+                  <li>2</li>
+                  <li>3</li>
+                  <li>2400 sqft</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="property-item">
+              <div class="property-img">
+                <img src="img/png/house-6.png" alt="San Diego story">
+              </div>
+
+              <div class="property-desc">
+                <h3>San Diego story</h3>
+                <p>$ 3,700.00 USD</p>
+
+                <div class="property-address">2569 El Segundo, San Diego</div>
+                <ul class="property-features">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>650 sqft</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
           <div class="explore-and-contact">
             <a href="#" class="explore-link">Explore properties</a>
             <a href="#" class="contact-link">Contact agent</a>
           </div>
-        </div>
 
-        <div class="info-img">
-          <img src="img/png/comfort-first.png" alt="The best houses for family comfort">
-        </div>
-      </article>
+        </section>
 
-    </section>
+        <section class="locations">
+
+        </section>
+      </div>
+
+    </article>
+
   </main>
 </body>
 
