@@ -10,7 +10,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #2a2c1f;
-  width: 100vw;
+  width: 100%;
   background-color: #ffffff;
 }
 
@@ -269,8 +269,6 @@ p {
 .main-image img {
   width: 100%;
   height: 100%;
-  max-width: 720px;
-  max-height: 686px;
 }
 
 /* Стили для блока-description */
