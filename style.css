@@ -574,7 +574,8 @@ ul {
 }
 
 .property-item {
-  width: 405px;
+  max-width: 405px;
+  width: 32%;
   margin-bottom: 31px;
 }
 
@@ -653,7 +654,5 @@ ul {
 }
 
 @media (min-width: 1240px) and (max-width: 1339px) {
-  .property-item {
-    width: 340px;
-  }
+
 }
