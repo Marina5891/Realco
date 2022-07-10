@@ -41,6 +41,12 @@ h3 {
   margin-bottom: 18px;
 }
 
+h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 16px;
+}
+
 p {
   color: #65665c;
   font-size: 1.125rem;
@@ -56,6 +62,10 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+input:focus {
+  outline-color: #cf6f49;
 }
 
 .slogan {
@@ -270,10 +280,6 @@ ul {
   display: inline-block;
 }
 
-.main-search input:focus {
-  outline-color: #65665c;
-}
-
 .main-search a.btn {
   display: inline-block;
   font-size: 1.25rem;
@@ -307,7 +313,9 @@ ul {
   height: 100%;
 }
 
-/* Стили для блока-description */
+/* Стили для блока description */
+
+/* Стили для раздела medias */
 
 .medias {
   display: flex;
@@ -368,6 +376,8 @@ ul {
   }
 }
 
+/* Стили для раздела about */
+
 .about {
   display: flex;
   flex-direction: column;
@@ -382,7 +392,8 @@ ul {
 }
 
 .about-img,
-.info-pic {
+.info-pic,
+.priority-pic {
   display: inline-block;
   width: 48px;
   height: 48px;
@@ -434,14 +445,15 @@ ul {
   }
 
   .about-img,
-  .info-pic {
+  .info-pic,
+  .priority-pic {
     width: 40px;
     height: 40px;
     margin-bottom: 18px;
   }
 }
 
-/* Стили для блока info */
+/* Стили для раздела info */
 
 .info {
   display: flex;
@@ -530,17 +542,23 @@ ul {
 
 /* Стили для блока properties */
 
-.properties {
+.property {
   background-color: #f5f5f2;
-  position: relative;
   padding: 128px 80px 160px;
+  position: relative;
 }
 
 .property h2 {
   margin-bottom: 80px;
 }
 
-.properties::before {
+.property .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.property::before {
   content: url('img/svg/Vector.svg');
   position: absolute;
   width: 135px;
@@ -550,7 +568,7 @@ ul {
   transform: rotate(90deg);
 }
 
-.properties::after {
+.property::after {
   content: url('img/svg/Vector.svg');
   position: absolute;
   width: 135px;
@@ -560,13 +578,7 @@ ul {
   transform: rotate(-90deg);
 }
 
-.container .property {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.property .property-items {
+.property-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -575,8 +587,8 @@ ul {
 
 .property-item {
   max-width: 405px;
-  width: 32%;
-  margin-bottom: 31px;
+  width: calc(100% / 3 - 1.5% * 2 / 3);
+  margin-bottom: 30px;
 }
 
 .property-desc {
@@ -589,7 +601,8 @@ ul {
 }
 
 .property-img {
-  max-height: 268px;
+  width: 100%;
+  height: 268px;
 }
 
 .property-img img {
@@ -654,5 +667,388 @@ ul {
 }
 
 @media (min-width: 1240px) and (max-width: 1339px) {
+  .property-desc {
+    padding: 16px;
+  }
 
+  .property-img {
+    height: 231px;
+  }
+}
+
+/* Стили для блока locations */
+
+.locations {
+  background-color: #f5f5f2;
+}
+
+.locations .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.locations p {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.locations-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-self: flex-start;
+  margin-bottom: 80px;
+}
+
+.locations-item {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 33px;
+  border: 1px solid #e7e8e3;
+  box-shadow: 0 2px 4px 0 #e7e8e3;
+  width: calc(100% / 3 - 16px * 2 / 3);
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+
+.locations-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.locations-item h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.locations .explore-and-contact {
+  margin-bottom: 128px;
+}
+
+/* Стили для блока priority */
+
+.priority {
+  background: linear-gradient(#f5f5f2 50%, #ffffff 50%)
+}
+
+.priority .container {
+  background-color: #65665c;
+  border-radius: 24px;
+  padding: 96px 256px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.priority .container p {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.priority .priority-pic {
+  background: #ffffff url("img/svg/family_restroom.svg") no-repeat center;
+  background-size: 60% 60%;
+}
+
+.priority .btn {
+  padding: 13px 25px;
+}
+
+/* Стили для блока reviews */
+
+.reviews .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 160px 0;
+}
+
+.reviews .container>p {
+  margin-bottom: 80px;
+}
+
+.reviews-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews-item {
+  width: calc(100% / 3 - 1.5% * 2 / 3);
+  border: 1px solid #e7e8e3;
+  box-shadow: 0 2px 4px 0 #e7e8e3;
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rating-icons {
+  margin-bottom: 27px;
+}
+
+.rating-icons .fa-star {
+  color: #cf6f49;
+}
+
+.reviews-item>p {
+  margin-bottom: 28px;
+}
+
+.reviews-author {
+  display: flex;
+  align-items: flex-start;
+}
+
+.reviews-author img {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+}
+
+.reviews-author h4,
+.reviews-author p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 1240px) and (max-width: 1339px) {
+  .reviews-item>p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .rating-icons {
+    margin-bottom: 20px;
+  }
+}
+
+/* Стили для блока posts */
+
+.posts {
+  background-color: #f5f5f2;
+}
+
+.posts .container {
+  padding: 128px 0;
+}
+
+.posts-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 80px;
+}
+
+.posts-description {
+  width: 700px;
+}
+
+.posts-btn a {
+  display: inline-block;
+  margin-right: 0;
+}
+
+.posts-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post {
+  width: calc(100% / 3 - 1.5% * 2 / 3);
+  background-color: #ffffff;
+  border: 1px solid #e7e8e3;
+  box-shadow: 0 2px 4px 0 #e7e8e3;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.post-img {
+  width: 100%;
+  max-height: 266px;
+}
+
+.post-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.post-desc {
+  height: 300px;
+  padding: 24px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-header {
+  margin-bottom: 16px;
+}
+
+.post-header a {
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  display: inline-block;
+  background-color: #fae8e1;
+  text-align: center;
+  vertical-align: middle;
+  padding: 4px 8px;
+  border-radius: 20px;
+  margin-right: 16px;
+}
+
+.post-header time {
+  color: #65665c;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+
+.post-desc h3 {
+  margin-bottom: 9px;
+}
+
+.post-desc p {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1240px) and (max-width: 1339px) {
+  .post-header {
+    margin-bottom: 10px;
+  }
+
+  .post-desc {
+    height: 270px;
+    padding: 22px;
+    padding-right: 30px;
+  }
+
+  .post-desc h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 7px;
+  }
+
+  .post-desc p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Стили для footer */
+
+.footer>.container {
+  padding: 64px 0;
+  display: flex;
+}
+
+.footer-group {
+  width: 750px;
+  display: flex;
+}
+
+.footer-logo {
+  margin-right: 95px;
+}
+
+.footer-logo img {
+  width: 105px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links-group {
+  width: 168px;
+}
+
+.footer-links-group li a {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  margin-bottom: 16px;
+}
+
+.footer-subscribe-form {
+  max-width: 384px;
+}
+
+.footer-subscribe-form form {
+  margin-bottom: 16px;
+}
+
+.footer-subscribe-form input {
+  padding: 12px 14px;
+  border: 1px solid #e7e8e3;
+  box-shadow: 0 2px 4px 0 #e7e8e3;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-right: 16px;
+  display: inline-block;
+}
+
+.footer-subscribe-form button {
+  padding: 13px 28px;
+  border: none;
+  font-size: 1rem;
+}
+
+.footer-subscribe-form>p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 14px;
+}
+
+.subscribe-footnote p {
+  font-size: 0.75rem;
+}
+
+.footer-copyright-and-media {
+  background-color: #f5f5f2;
+
+}
+
+.footer-copyright-and-media .container {
+  padding: 24px 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  color: #65665c;
+  font-size: 0.875rem;
+}
+
+.footer-media li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.footer-media a {
+  display: block;
+  height: 24px;
+}
+
+.footer-media li img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 1240px) and (max-width: 1339px) {
+  .footer-logo {
+    margin-right: 75px;
+  }
+
+  .footer-links-group {
+    width: 140px;
+  }
 }
